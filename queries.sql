@@ -48,3 +48,18 @@ max_purchases AS (
 SELECT cp.customer_id, cp.product_name, cp.product_count
 FROM customer_purchases cp
 JOIN max_purchases mp ON cp.customer_id = mp.customer_id AND cp.product_count = mp.max_count;
+
+
+-- 6. Which item was purchased first by the customer after they became a member?
+SELECT s.customer_id, s.order_date AS first_order, me.product_name
+FROM sales s
+JOIN members m ON s.customer_id = m.customer_id
+JOIN menu me ON s.product_id = me.product_id
+WHERE 
+    s.order_date >= m.join_date
+    AND s.order_date = (
+        SELECT MIN(s2.order_date)
+        FROM sales s2
+        WHERE s2.customer_id = s.customer_id
+        AND s2.order_date >= m.join_date
+    );
