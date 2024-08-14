@@ -6,12 +6,12 @@
 SELECT s.customer_id, SUM(m.price) AS Total_sales
 FROM sales s
 JOIN menu m ON s.product_id = m.product_id
-GROUP BY s.customer_id
+GROUP BY s.customer_id;
 
 -- 2. How many days has each customer visited the restaurant?
 SELECT customer_id, COUNT(DISTINCT order_date) AS Time_visited
 FROM sales
-GROUP BY customer_id
+GROUP BY customer_id;
 
 -- 3. What was the first item from the menu purchased by each customer?
 SELECT DISTINCT s.customer_id, m.product_name
@@ -21,7 +21,7 @@ WHERE s.order_date IN (
     SELECT MIN(s.order_date) AS first_date
     FROM sales s
     GROUP BY s.customer_id
-)
+);
 
 
 -- 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
@@ -30,7 +30,7 @@ FROM sales s
 JOIN menu m ON s.product_id = m.product_id
 GROUP BY m.product_name
 ORDER BY purchase_count DESC
-LIMIT 1 
+LIMIT 1; 
 
 
 -- 5. Which item was the most popular for each customer?
@@ -78,3 +78,12 @@ WHERE
         WHERE s2.customer_id = s.customer_id
         AND s2.order_date < m.join_date
     );
+
+
+-- 8. What is the total items and amount spent for each member before they became a member?
+SELECT s.customer_id, COUNT(me.product_name) AS total_items, SUM(me.price) AS total_amount_spent
+FROM sales s
+JOIN members m ON s.customer_id = m.customer_id
+JOIN menu me ON s.product_id = me.product_id 
+WHERE s.order_date < m.join_date
+GROUP BY s.customer_id;
