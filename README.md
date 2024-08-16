@@ -1,5 +1,7 @@
-# SQL-Challenge
-This is part of an 8-week SQL Challenge from Danny.
+# 8-Week-SQL-Challenge
+This repository contains the solutions for the case studies in **[8 Week SQL Challenge by Danny](https://8weeksqlchallenge.com/)**
 
-# Case Study #1 - Danny's Diner
-https://8weeksqlchallenge.com/case-study-1/
+The solution is in MySQL.
+
+## Case Study #1 - Danny's Diner
+**[Danny's Diner](https://8weeksqlchallenge.com/case-study-1/)**
