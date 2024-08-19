@@ -4,4 +4,4 @@ This repository contains the solutions for the case studies present in **[8 Week
 The solution is in MySQL.
 
 # Table of Contents 
-- **[Case Study #1 - Danny's Diner](https://8weeksqlchallenge.com/case-study-1/)**
+- **[Case Study #1 - Danny's Diner](https://github.com/AbhishekKumarRoy/SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner%20)**
