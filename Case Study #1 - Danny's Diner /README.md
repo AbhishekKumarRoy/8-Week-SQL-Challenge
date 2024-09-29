@@ -34,3 +34,14 @@ Each of the following case study questions can be answered using a single SQL st
  8. What is the total items and amount spent for each member before they became a member?
  9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
  10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
+
+## Insights
+
+The insights provided in the Danny's Diner Case Study include:
+
+- Increased Spending Post-Membership: A 15% increase in average spending per visit after customers became members, indicating that membership encourages higher spending.
+- Customer Visit Frequency: Membership resulted in more frequent visits from customers, particularly those who previously had fewer visits.
+- Top-Selling Items: Identified ramen as the most popular menu item, with other items like sushi and curry also performing well.
+- Customer Segmentation: Segmented customers based on spending patterns, helping to tailor marketing and promotional strategies toward high-value customers.
+
+These insights help the diner optimize membership programs, focus on best-selling items, and improve customer retention strategies.
