@@ -37,8 +37,6 @@ Each of the following case study questions can be answered using a single SQL st
 
 ## Insights
 
-The insights provided in the Danny's Diner Case Study include:
-
 - Increased Spending Post-Membership: A 15% increase in average spending per visit after customers became members, indicating that membership encourages higher spending.
 - Customer Visit Frequency: Membership resulted in more frequent visits from customers, particularly those who previously had fewer visits.
 - Top-Selling Items: Identified ramen as the most popular menu item, with other items like sushi and curry also performing well.
