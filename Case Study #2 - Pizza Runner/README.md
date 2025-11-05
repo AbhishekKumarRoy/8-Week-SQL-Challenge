@@ -16,7 +16,7 @@ He has prepared for us an entity relationship diagram of his database design but
 
 
 ## Entity Relationship Diagram
-<img width="1440" height="700" alt="image" src="https://github.com/user-attachments/assets/e1d77aa8-92a1-4fe6-a271-9c5b0d516819" />
+
 
 
 ## Case Study Questions
